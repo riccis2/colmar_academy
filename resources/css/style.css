@@ -1,3 +1,345 @@
 html{
   font-size: 16px;
 }
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+h3{
+  font-size: 1.25rem;
+  color: #4d4d4d;
+}
+
+/* ---------------------------Header------------------------------- */
+
+header{
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#logo-colmar{
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+#logo-academy{
+  font-weight: lighter;
+  color: grey;
+}
+
+nav{
+  padding-right: 0.5rem;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+
+li:hover{
+  background-color: lightgrey;
+}
+
+li img{
+  padding: 0.25rem;
+}
+
+li i{
+  padding: 0.5rem;
+}
+
+/* ----------------------------Banner-------------------------------- */
+
+.banner{
+  display: flex;
+  width: 100%;
+  height: 35rem;
+  padding: 6rem 1.5rem 2rem 1.5rem;
+  background-color: lightgrey;
+}
+
+.banner-photo{
+  background-image: url(../media/photos/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  margin: 2rem, 1.5rem;
+}
+.motto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.5rem;
+  max-width: 25%;
+}
+
+.motto h1{
+  margin-bottom: 1.5rem;
+}
+
+.motto h3{
+  margin-bottom: 1.5rem;
+}
+
+.button{
+  text-align: center;
+  background-color: #4d4d4d;
+  color: white;
+  padding: 0.5rem 0rem;
+}
+
+.button:hover{
+  background-color: grey;
+}
+
+.button:active{
+  background-color: darkgrey;
+}
+
+/* ----------------------------Content------------------------------ */
+
+.content{
+  display: flex;
+  width: 100%;
+  height: 43.75rem;
+  margin: 0 0 2rem 1.5rem;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.content-photo{
+  background-image: url(../media/photos/information-main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 31rem;
+  margin-top: 2rem;
+}
+
+.section h2{
+  padding-top: 2rem;
+
+}
+
+.section p{
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  margin-right: -2.6rem;
+  border-right: 1.5px solid #F2F1F1;
+}
+
+.section span{
+  font-size: 0.9rem;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 2.5rem;
+  width: 423px;
+  border-left: 1.5px solid #F2F1F1;
+  border-right: 1px solid #F2F1F1;
+}
+
+.photo-link{
+  display: flex;
+  width: auto;
+  height: auto;
+  border-bottom: 1.5px solid #F2F1F1;
+}
+
+.content .photo-link{
+  margin-top: 1rem;
+}
+
+.photo-link:hover{
+  background: lightgrey;
+}
+
+.small-photo{
+  width: 35%;
+  height: 9rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+#photo1{
+  background-image: url(../media/photos/information-orientation.jpg);
+}
+
+#photo2{
+  background-image: url(../media/photos/information-campus.jpg);
+}
+
+#photo3{
+  background-image: url(../media/photos/information-guest-lecture.jpg);
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem 0 2.5rem 0;
+  width: 65%;
+}
+
+.info p{
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+.info a{
+  color: blue;
+  text-decoration: none;
+}
+
+/*-----------------------------Courses------------------------------*/
+
+.courses{
+  height: auto;
+  background-color: #EDEDED;
+  padding-bottom: 2rem;
+}
+
+.courses h2{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.grid{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course{
+  height: 20rem;
+  width: 22rem;
+  margin: 2rem;
+  background-color: white;
+}
+
+.medium-photo{
+  height: 55%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.course h3{
+  padding: 1rem 0rem 0rem 1rem;
+  color: #4d4d4d;
+}
+
+.course h4{
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  color: lightgrey;
+}
+
+.course p{
+  padding: 0rem 0rem 1.5rem 1rem;
+  color: lightgrey;
+}
+
+#course1{
+  background-image: url(../media/photos/course-software.jpg);
+}
+
+#course2{
+  background-image: url(../media/photos/course-computer-art.jpg);
+}
+
+#course3{
+  background-image: url(../media/photos/course-design.jpg);
+}
+
+#course4{
+  background-image: url(../media/photos/course-data.jpg);
+}
+
+#course5{
+  background-image: url(../media/photos/course-business.jpg);
+}
+
+#course6{
+  background-image: url(../media/photos/course-marketing.jpg);
+}
+
+/*-----------------------------Thesis--------------------------------------*/
+
+.thesis{
+  width: 100%;
+  height: 43.75rem;
+}
+
+.thesis h2{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+}
+
+section{
+  width: 60%;
+  height: auto;
+}
+
+section video{
+  width: 100%;
+  height: auto;
+  margin: 0 1rem 1.5rem 1.5rem;
+}
+
+.thesis aside{
+  border: none;
+}
+
+.thesis .photo-link{
+  border: none;
+}
+
+#photo4{
+  background-image: url(../media/photos/thesis-fisma.jpg);
+}
+
+#photo5{
+  background-image: url(../media/photos/thesis-now-and-then.jpg);
+}
