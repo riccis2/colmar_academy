@@ -1,32 +1,41 @@
 html{
   font-size: 16px;
+  font-family: "lucids sans unicode", sans-serif;
 }
 
 h1{
+  font-family: "Exo 2", "lucida sans unicode", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   color: #412305;
 }
 h2{
+  font-family: "Maven Pro", "lucida sans unicode", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #412305;
 }
 h3{
+  font-family: "Rockitt", "lucida sans unicode", sans-serif;
   font-size: 1.25rem;
   color: #412305;
 }
 
 h4{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
   color: #152940;
+  font-size: 1.5rem;
 }
 
 p{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
   color: #576471;
 }
 
-span{
+span, a{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
   color: #412305;
+  font-weight: 200;
 }
 
 /* ---------------------------Header------------------------------- */
@@ -53,7 +62,7 @@ header{
 }
 
 #logo-academy{
-  font-weight: lighter;
+  font-weight: 200;
   color: #576471;
 }
 
@@ -74,7 +83,7 @@ li{
 }
 
 li:hover{
-  background-color: lightgrey;
+  background-color: #F3EA7E;
 }
 
 li img{
@@ -191,23 +200,27 @@ aside{
   height: 100%;
   margin-left: 2.5rem;
   width: 423px;
-  border-left: 1.5px solid #F2F1F1;
-  border-right: 1px solid #F2F1F1;
+  border-left: 1px solid #412305;
+  border-right: 0.5px solid #412305;
 }
 
 .photo-link{
   display: flex;
   width: auto;
   height: auto;
-  border-bottom: 1.5px solid #F2F1F1;
+  border-bottom: 1px solid #412305;
 }
 
 .content .photo-link{
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .photo-link:hover{
   background: #F3EA7E;
+}
+
+.photo-link a:hover{
+  color: #412305;
 }
 
 .small-photo{
@@ -240,11 +253,11 @@ aside{
 }
 
 .info p{
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .info a{
-  color: blue;
+  color: #7F9EBD;
   text-decoration: none;
 }
 
@@ -385,7 +398,7 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 0 0 1.5rem;
-  border-top: 1.5px solid #F2F1F1;
+  border-top: 1px solid #412305;
   height: 5rem;
   background-color: #F3F4F1;
 }
@@ -396,6 +409,7 @@ footer{
 
 .links a{
   text-decoration: none;
-  color: #808080;
+  color: #92A8BD;
   padding: 0 0.75rem;
+  font-weight: 200;
 }
