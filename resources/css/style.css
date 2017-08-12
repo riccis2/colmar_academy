@@ -38,6 +38,7 @@ span, a{
   font-weight: 200;
 }
 
+
 /* ---------------------------Header------------------------------- */
 
 header{
@@ -48,6 +49,10 @@ header{
   position: fixed;
   background-color: #F3F4F1;
   width: 100%;
+}
+
+.header-mobile{
+  display: none;
 }
 
 .logo{
@@ -84,6 +89,7 @@ li{
 
 li:hover{
   background-color: #F3EA7E;
+  transition: background-color 0.25s ease;
 }
 
 li img{
@@ -98,7 +104,7 @@ li i{
 
 .banner{
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 35rem;
   padding: 6rem 1.5rem 2rem 1.5rem;
   background-color: #92A8BD;
@@ -147,26 +153,29 @@ li i{
 
 .button:hover{
   background-color: #412305;
+  transition: background-color 0.25s ease;
 }
 
 .button:active{
   background-color: #F3EA7E;
+  transition: background-color 0.25s ease;
 }
 
 /* ----------------------------Content------------------------------ */
 
 .content{
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 43.75rem;
-  padding: 0 0 2rem 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
   background-color: #F3F4F1;
 }
 
 .section{
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 59.4%;
 }
 
 .content-photo{
@@ -175,13 +184,12 @@ li i{
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 31rem;
+  height: 31rem;
   margin-top: 2rem;
 }
 
 .section h2{
   padding-top: 2rem;
-
 }
 
 .section p{
@@ -217,6 +225,7 @@ aside{
 
 .photo-link:hover{
   background: #F3EA7E;
+  transition: background-color 0.25s ease;
 }
 
 .photo-link a:hover{
@@ -265,6 +274,7 @@ aside{
 
 .courses{
   height: auto;
+  width: 100%;
   background-color: #F3EA7E;
   padding-bottom: 2rem;
 }
@@ -276,21 +286,27 @@ aside{
 
 .grid{
   display: flex;
-  width: 100%;
+  width: 100rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.grid-mobile{
+  display: none;
 }
 
 .course{
   height: 20rem;
   width: 22rem;
   margin: 2rem;
-  background-color: white;
+  background-color: #F3F4F1;
 }
 
 .course:hover{
   height: 24rem;
   width: 26rem;
+  transition: height 0.25s ease, width 0.25s ease;
 }
 
 .medium-photo{
@@ -341,7 +357,7 @@ aside{
 
 .thesis{
   width: 100%;
-  height: 43.75rem;
+  height: auto;
   background-color: #F3F4F1;
 }
 
@@ -363,7 +379,7 @@ section{
 
 section video{
   width: 100%;
-  height: auto;
+  height: 30rem;
   margin-right: 1rem;
 }
 
@@ -373,7 +389,6 @@ section h3{
 
 section p{
   margin-top: 1.5rem;
-  color: #808080;
 }
 
 .thesis aside{
@@ -404,12 +419,137 @@ footer{
 }
 
 .copywrite{
-  color: #808080;
+  color: #412305;
 }
 
 .links a{
   text-decoration: none;
-  color: #92A8BD;
+  color: #412305;
   padding: 0 0.75rem;
   font-weight: 200;
+}
+
+/*-----------------------------Mobile Code-----------------------------------*/
+
+@media only screen and (orientation: portrait) and (max-width: 600px){
+  header{
+    display: none;
+  }
+
+  .header-mobile{
+    display: block;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: #F3F4F1;
+  }
+
+  .header-mobile nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .header-mobile ul{
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner{
+    display: block;
+    height: auto;
+  }
+
+  .banner-photo{
+    width: 100%;
+    height: 11.25rem;
+    margin: 0;
+  }
+
+  .motto{
+    max-width: 100%;
+  }
+
+  .content{
+    height: auto;
+    padding: 0;
+  }
+
+  .section{
+    display: none;
+  }
+
+  .content aside{
+    height: auto;
+    width: 100%;
+    border: none;
+    margin: 1rem;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .content .photo-link{
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .small-photo{
+    width: 100%;
+    margin: 0;
+  }
+
+  .info{
+    padding-left: 1rem;
+  }
+
+  .courses{
+    background-color: #F3F4F1;
+  }
+
+  .courses h2{
+    padding: 2rem 0 1rem 0;
+  }
+
+  .grid{
+    display: none;
+  }
+
+  .grid-mobile{
+    display: block;
+  }
+
+  .grid-mobile h2{
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #F3EA7E;
+  }
+
+  .thesis h3, .thesis p, .thesis aside{
+    display: none;
+  }
+
+  .thesis video{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    padding: 0;
+  }
+
+
+
+
 }
