@@ -431,7 +431,7 @@ footer{
 
 /*-----------------------------Mobile Code-----------------------------------*/
 
-@media only screen and (orientation: portrait) and (max-width: 600px){
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: ladnscape){
   header{
     display: none;
   }
