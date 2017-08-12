@@ -5,16 +5,28 @@ html{
 h1{
   font-size: 2rem;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #412305;
 }
 h2{
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #412305;
 }
 h3{
   font-size: 1.25rem;
-  color: #4d4d4d;
+  color: #412305;
+}
+
+h4{
+  color: #152940;
+}
+
+p{
+  color: #576471;
+}
+
+span{
+  color: #412305;
 }
 
 /* ---------------------------Header------------------------------- */
@@ -25,7 +37,7 @@ header{
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: white;
+  background-color: #F3F4F1;
   width: 100%;
 }
 
@@ -37,12 +49,12 @@ header{
 
 #logo-colmar{
   font-weight: bold;
-  color: #4d4d4d;
+  color: #31373E;
 }
 
 #logo-academy{
   font-weight: lighter;
-  color: grey;
+  color: #576471;
 }
 
 nav{
@@ -58,6 +70,7 @@ li{
   align-items: center;
   padding: 0 1rem;
   font-weight: 400;
+  color: #31373E;
 }
 
 li:hover{
@@ -79,7 +92,7 @@ li i{
   width: 100%;
   height: 35rem;
   padding: 6rem 1.5rem 2rem 1.5rem;
-  background-color: lightgrey;
+  background-color: #92A8BD;
 }
 
 .banner-photo{
@@ -108,17 +121,27 @@ li i{
 
 .button{
   text-align: center;
-  background-color: #4d4d4d;
+  background-color: #576471;
   color: white;
   padding: 0.5rem 0rem;
 }
 
+.button p{
+  color: #F3F4F1;
+  width: 100%;
+  height: auto;
+}
+
+.button p:active{
+  color: #412305;
+}
+
 .button:hover{
-  background-color: grey;
+  background-color: #412305;
 }
 
 .button:active{
-  background-color: darkgrey;
+  background-color: #F3EA7E;
 }
 
 /* ----------------------------Content------------------------------ */
@@ -127,7 +150,8 @@ li i{
   display: flex;
   width: 100%;
   height: 43.75rem;
-  margin: 0 0 2rem 1.5rem;
+  padding: 0 0 2rem 1.5rem;
+  background-color: #F3F4F1;
 }
 
 .section{
@@ -148,19 +172,17 @@ li i{
 
 .section h2{
   padding-top: 2rem;
-  color: #4d4d4d;
+
 }
 
 .section p{
   padding: 1.5rem 0;
   font-size: 1rem;
   margin-right: -2.6rem;
-  color: #808080;
 }
 
 .section span{
   font-size: 0.9rem;
-  color: #808080;
 }
 
 aside{
@@ -185,7 +207,7 @@ aside{
 }
 
 .photo-link:hover{
-  background: lightgrey;
+  background: #F3EA7E;
 }
 
 .small-photo{
@@ -219,7 +241,6 @@ aside{
 
 .info p{
   font-weight: 400;
-  color: #4d4d4d;
 }
 
 .info a{
@@ -231,7 +252,7 @@ aside{
 
 .courses{
   height: auto;
-  background-color: #EDEDED;
+  background-color: #F3EA7E;
   padding-bottom: 2rem;
 }
 
@@ -254,6 +275,11 @@ aside{
   background-color: white;
 }
 
+.course:hover{
+  height: 24rem;
+  width: 26rem;
+}
+
 .medium-photo{
   height: 55%;
   width: 100%;
@@ -264,17 +290,14 @@ aside{
 
 .course h3{
   padding: 1rem 0rem 0rem 1rem;
-  color: #4d4d4d;
 }
 
 .course h4{
   padding: 0.5rem 0rem 0.5rem 1rem;
-  color: #808080;
 }
 
 .course p{
   padding: 0rem 0rem 1.5rem 1rem;
-  color: #808080;
 }
 
 #course1{
@@ -306,6 +329,7 @@ aside{
 .thesis{
   width: 100%;
   height: 43.75rem;
+  background-color: #F3F4F1;
 }
 
 .thesis h2{
@@ -363,7 +387,7 @@ footer{
   padding: 1.5rem 0 0 1.5rem;
   border-top: 1.5px solid #F2F1F1;
   height: 5rem;
-
+  background-color: #F3F4F1;
 }
 
 .copywrite{
