@@ -431,7 +431,7 @@ footer{
 
 /*-----------------------------Mobile Code-----------------------------------*/
 
-@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape){
+@media only screen and (orientation: portrait), (max-width: 600px){
   header{
     display: none;
   }
@@ -499,6 +499,7 @@ footer{
 
   .small-photo{
     width: 100%;
+    height: 20rem;
     margin: 0;
   }
 
@@ -547,6 +548,18 @@ footer{
   }
   .container{
     padding: 0;
+  }
+
+  #photo1{
+    background-image:url(../media/photos/information-orientation-mobile.jpg);
+  }
+
+  #photo2{
+    background-image:url(../media/photos/information-campus-mobile.jpg);
+  }
+
+  #photo3{
+    background-image:url(../media/photos/information-guest-lecture-mobile.jpg);
   }
 
 
